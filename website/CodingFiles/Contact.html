@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>توازن - تواصل معنا</title>
+</head>
+<body>
+
+<header id="homeHeader">
+    <figure> 
+        <img class="headerimg" src="logo.jpeg" alt="website logo">
+    </figure> 
+
+    <nav>
+        <a href="HomePage.html">الرئيسية</a>
+        <a href="AboutUs.html">عنا</a>
+        <a href="#products">المنتجات</a>
+        <a href="HbA1c Analysis.html">السكر التراكمي</a>
+        <a href="#contact">سياسة الارجاع</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">المساعدة</a>
+            <div class="dropdown-content">
+                <a href="Contact.html">اتصل بنا</a>
+                <a href="FAQ.html">الأسئلة المتكررة</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main content of the page -->
+<div class="container">
+    <h1>نحن هنا لمساعدتكم</h1>
+    <h2>يسعدنا سماع استفساراتكم وملاحظاتكم.</h2>
+
+    <form name="contactForm" id="contactForm">
+        <label for="fname">الاسم الكامل:</label>
+        <input type="text" id="fname" name="fname" maxlength="15" size="20" placeholder="مثال: نورة السالمي">
+        <span id="fname-error" class="error-message"></span>
+        <br/>
+        
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" placeholder="name@domain.com">    
+        <span id="email-error" class="error-message"></span>
+        <br/>
+
+        <label for="phone">رقم الهاتف:</label>
+        <input type="tel" id="phone" placeholder="05XXXXXXXX :مثال">    
+        <span id="phone-error" class="error-message"></span>
+        <br/>
+        
+        <label for="message">الرسالة:</label> 
+        <textarea id="message" name="message" rows="7" placeholder="اكتب رسالتك هنا."></textarea> 
+        <span id="message-error" class="error-message"></span>            
+        <br/>
+                
+        <!-- Captcha -->
+        <label>التحقق: <span id="captchaQuestion"></span></label>
+        <input type="text" id="captchaAnswer" placeholder="Enter the captcha answer">
+        <span id="error" class="error-message"></span>
+
+        <!-- submit -->
+        <input type="submit" value="إرسال" name="Submit" />
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+<script src="script.js" defer></script>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&nbsp;تابعونا على 
+        <a href="https://x.com/home">Twitter/ X</a>, 
+        <a href="https://www.instagram.com/">Instagram</a> 
+    </p>
+    <p>&copy; جميع الحقوق محفوظة | توازُن 2024</p>
+</footer>
+
+</body>
+</html>
