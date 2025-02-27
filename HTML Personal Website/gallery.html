@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="External.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="initializeGallery()"> <!-- Add onload event here -->
+
+    <h1>Dana Alnunu's Gallery</h1>
+    <!-- Logo Image -->
+    <img src="logo.png" width="200" height="200" alt="Logo" class="logo" />
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contactme.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="drawingHobby.jpg" alt="Image 1">
+            <figcaption>My Hobby is Drawing</figcaption>
+        </figure>
+        
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="readingHobby.jpg" alt="Image 2">
+            <figcaption>My Hobby is Reading</figcaption>
+        </figure>
+        
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="writingHobby.jpeg" alt="Image 3">
+            <figcaption>My Hobby is Writing</figcaption>
+        </figure>
+        
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="photographyHobby.jpeg" alt="Image 4">
+            <figcaption>My Hobby is Photography</figcaption>
+        </figure>
+        
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="codingFun.jpg" alt="Image 5">
+            <figcaption>Coding is Fun</figcaption>
+        </figure>
+        
+        <figure class="gallery-item" onclick="showFullImage(this)">
+            <img src="sport.jpg" alt="Image 6">
+            <figcaption>Playing Sport is Important for Me</figcaption>
+        </figure>
+    </section>
+
+    <div id="full-image-modal" class="modal" onclick="this.style.display='none'">
+        <img id="full-image" src="" alt="Full Size Image">
+    </div>
+
+    <script src="script.js"></script> <!-- Keeping your JavaScript link as is -->
+
+</body>
+</html>
