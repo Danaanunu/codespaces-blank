@@ -1,0 +1,563 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Droid+Arabic+Kufi&display=swap');
+
+
+
+
+/* Full-screen welcome image styling */
+.welcome-bg {
+    width: 100vw;               /* Full viewport width */
+    height: 70vh;              /* Full viewport height */
+    background-image: url('welcomePicture.jpg'); /* Specify your image path */
+    background-size: cover;     /* Ensures the image covers the div without stretching */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    margin: 0;                  /* Removes default margin */
+    padding: 0;                 /* Removes default padding */
+    /* Softening edges with rounded corners */
+    border-radius: 20px; 
+
+}
+/* why us pictures styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;               /* Flexbox for alignment */
+    justify-content: space-between;
+    gap: 10px;                   /* Space between columns */
+    padding: 20px;               /* Padding around the row */
+    margin: 0 auto;              /* Center the row in its container */
+    max-width: 1200px;           /* Set a max-width for better control */
+}
+
+.column {
+    flex: 1;                     /* Each column takes up equal space */
+    padding: 5px;
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.column img {
+    width: 100%;                 /* Full width of column */
+    height: auto;
+    border-radius: 10px;         /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.column:hover img {
+    transform: scale(1.05);      /* Slightly enlarge on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+
+/* General body styling */
+body {
+    direction: rtl;
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    background-color: #f7f9fc;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2 {text-align: center;}
+
+/* Header and logo styling */
+header {
+    background-color: #ffffff;
+    color: #004080;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+    justify-content: right; /* Centers logo and text within header */
+    margin: 0;
+}
+
+.headerimg {
+    height: 120px;
+    margin-right: 100px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+/* Centered navigation bar */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Navigation link styling */
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 10px;
+}
+
+/* Blue line above link on hover */
+nav a::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: #000000;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.dropdown .dropbtn:hover {
+    color: #004080
+}
+
+/* Make dropdown content only as wide as its content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px; /* Space around main content */
+}
+
+/* Full-screen welcome image styling */
+.welcome-img {
+    width: 100vw;             /* Full viewport width */
+    height: 100vh;            /* Full viewport height */
+    object-fit: cover;        /* Ensures the image covers the area without stretching */
+    display: block;           /* Ensures it displays as a block element */
+    margin: 0;                /* Removes default margin */
+    padding: 0;               /* Removes default padding */}
+
+/* Section styling */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading styling */
+section h2 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+section p {
+    font-size: 1.1em;
+    color: #666666;
+    line-height: 1.8;
+}
+
+/* Highlight box styling */
+.highlight-box {
+    background-color: #e6f2ff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Button styling */
+button, .cta-button {
+    background-color: #004080;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container for gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual gallery items */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Background colors for each item */
+.item-renas {
+    background-color: #ffe5e5; /* Light pink */
+}
+
+.item-dana-alnunu {
+    background-color: #e5f7ff; /* Light blue */
+}
+
+.item-dana-saiqule {
+    background-color: #e5ffe5; /* Light green */
+}
+
+.item-nawal {
+    background-color: #fff3e5; /* Light orange */
+}
+
+/* Image styling */
+.clickable-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on gallery item */
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover .clickable-image {
+    transform: scale(1.1);
+}
+
+/* Name styling */
+.gallery-item p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #004080da; /* Light green color for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #004080; /* Darker green on hover */
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#result p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#result button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Unordered list styling (RTL) */
+ul {
+    list-style-type: none;
+    padding-right: 0;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+ul li {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.7;
+    background: #e6f2ff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #add0f7;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #004080;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: scale(1.2);
+}
+
+/* Ordered list styling (RTL) */
+ol {
+    list-style-type: none;
+    padding-right: 20px;
+    margin: 20px 0;
+    counter-reset: custom-counter;
+    direction: rtl;
+}
+
+ol li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-right: 35px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.7;
+    background: #fff3e5;
+    border-radius: 8px;
+    padding: 12px 20px;
+    counter-increment: custom-counter;
+    transition: background-color 0.3s ease;
+}
+
+ol li::before {
+    content: counter(custom-counter) ".";
+    color: #004080;
+    font-weight: bold;
+    font-size: 1.3em;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: scale(1.2);
+}
+
+/* Nested lists styling */
+ul ul, ol ol {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+ul ul li, ol ol li {
+    color: #666;
+    font-size: 0.95em;
+    background: transparent;
+    border-radius: 5px;
+}
+
+ul ul li::before, ol ol li::before {
+    color: #004080;
+}
+
+/* Style for details container */
+details {
+    background-color: #f7f9fc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+details[open] {
+    background-color: #e6f2ff;
+}
+
+/* Style for summary */
+summary {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #004080;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    list-style: none; /* Removes default disclosure icon */
+    direction: rtl;
+}
+
+summary::marker {
+    display: none; /* Hides default marker */
+}
+
+/* Custom icon for the summary */
+summary::before {
+    content: '\25BC'; /* Downward arrow icon */
+    font-size: 1em;
+    color: #004080;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    content: '\25B2'; /* Upward arrow icon */
+    transform: rotate(180deg);
+}
+
+/* Style for content within details */
+details > div {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 10px;
+    padding-right: 10px;
+    direction: rtl;
+}
+
+/* Section styling with initial hidden state for animation */
+section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    direction: rtl;
+    opacity: 0; /* Start hidden */
+    transform: translateY(30px); /* Start slightly lower */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+/* Animation active state */
+section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section title styling */
+section h2 {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    font-size: 2em;
+    color: #004080;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Section paragraph styling */
+section p {
+    font-size: 1.1em;
+    color: #666666;
+    line-height: 1.8;
+    margin: 0 10px;
+}
+
+/* Decorative border for section */
+section::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffa500;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
